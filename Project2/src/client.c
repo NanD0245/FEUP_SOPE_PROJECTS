@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <sys/times.h>
+#include <pthread.h>
 #include "utils.h"
+#include "tasks.h"
 
 clock_t start, end;
 struct tms t;
@@ -13,7 +15,9 @@ int main(int argc, char* argv[], char* envp[]) {
 
     init_clock();
 
-    while(check_time(argv)) ;
+    create_publicFIFO(argc,argv);
+
+    process_tasks(argc,argv);
 
     return 0;
 }

@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include "tasks.h"
 
 
-static int ask_id = 0;
 
 struct message {
 	int rid;	// request id
@@ -13,6 +13,8 @@ struct message {
 	int tskload;	// task load
 	int tskres;	// task result
 };
+
+//enum Oper = {IWANT, GOTRS, CLOSD, GAVUP};
 
 void generate_message(struct message * sms);
 

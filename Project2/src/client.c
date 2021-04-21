@@ -12,10 +12,10 @@ int main(int argc, char* argv[], char* envp[]) {
         printf("usage: c <-t nsecs> fifoname\n");
         return 0;
     }
-
     init_clock();
 
-    create_publicFIFO(argc,argv);
+
+    //create_publicFIFO(argc,argv);
 
     process_tasks(argc,argv);
 

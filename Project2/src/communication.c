@@ -2,6 +2,8 @@
 #include <pthread.h>
 #include <unistd.h>
 
+extern int ask_id;
+
 void generate_message(struct message * sms){
     time_t t;
 

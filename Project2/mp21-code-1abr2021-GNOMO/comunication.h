@@ -6,4 +6,6 @@ typedef struct {
     pid_t pid; //identificador process
     pid_t tid; //identificador thread
     int res; //Client = -1 ; Server = ? ou -1 caso o serviço esteja encerrado
-}
+}message;
+
+void generate

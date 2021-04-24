@@ -1,47 +1,51 @@
 #include "tasks.h"
-#include <fcntl.h>
-#include "string.h"
-#include "utils.h"
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 
 int ask_id = 0;
 pthread_mutex_t mut=PTHREAD_MUTEX_INITIALIZER;
 
-int create_publicFIFO(int argc, char* argv[]){
-    if (mkfifo(argv[argc-1], 0666) < 0) 
-    {
-        fprintf(stderr, "pipe error\n");
-        return -1;
-    }
-    return 0;
-}
-
-int create_privateFIFO() {
-    return 0;
-}
-
-
 int process_tasks(int argc, char* argv[]){
 
-    pthread_t ptid;
+    pthread_t * ids = (pthread_t *)malloc(sizeof(pthread_t));
+    struct argCV args;
+    args.argc = argc;
+    args.argv = argv;
 
     while(check_time(argv)){
-        if(pthread_create(&ptid,NULL,process_threads,NULL) != 0) {
+
+        ids = realloc(ids, (ask_id + 1)*sizeof(pthread_t));
+
+        if(pthread_create(&ids[ask_id],NULL,process_threads,&args) != 0) {
 			perror("pthread_create");
 			exit(3);
 		}
-        ask_id++;
+        usleep(1000);
     }
 
+    for (int i = 0; i < ask_id; i++) {
+        pthread_join(ids[i], NULL);
+    }
+    
     return 0;
-
 }
 
 
 void * process_threads(void* arg) {
     pthread_mutex_lock(&mut);
-    pthread_exit(NULL);
+
+    //create
+    struct argCV *args = (struct argCV*)arg;
+    if (check_time(args->argv)) {
+        struct message * sms = generate_message();
+        ask_id++;
+        create_privateFIFO(&sms);
+        
+        //TODO: server communication
+        send_message(args->argc, args->argv, *sms);
+        recieve_message(args->argc, args->argv, *sms);
+        
+        //eliminate
+        eliminate_privateFIFO(&sms);
+    }
     pthread_mutex_unlock(&mut);
+    return NULL;
 }

@@ -5,6 +5,8 @@ extern struct tms t;
 
 void init_clock(){
     start = times(&t);
+    /* Intializes random number generator */
+    srand(time(0));
 }
 
 bool check_time(char* argv[]) {

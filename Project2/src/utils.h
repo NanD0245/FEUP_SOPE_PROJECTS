@@ -5,6 +5,8 @@
 #include <string.h>
 #include <stdbool.h>
 #include <unistd.h>
+#include <sys/times.h>
+#include <time.h>
 
 /**
  * @brief Stars the clock and saves the number of clock ticks per second
@@ -12,6 +14,8 @@
  */
 void init_clock();
 
-/*
-*/
+/**
+ * @brief Checks how much time a process took.
+ * 
+ */
 bool check_time(char* argv[]);

@@ -19,3 +19,7 @@ void init_clock();
  * 
  */
 bool check_time(char* argv[]);
+
+time_t get_remaining_time_secs(char * argv[]);
+
+suseconds_t get_remaining_time_micro(char * argv[]);

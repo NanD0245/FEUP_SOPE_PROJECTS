@@ -4,9 +4,7 @@
 int public_fifo;
 
 int open_publicFIFO(int argc, char* argv[]){
-    while ((public_fifo = open(argv[argc - 1], O_WRONLY)) < 0 && check_time(argv)) {
-        //if(!check_time(argv)) return -1;
-    }
+    while ((public_fifo = open(argv[argc - 1], O_WRONLY)) < 0 && check_time(argv)) ;
     return 0;
 }
 

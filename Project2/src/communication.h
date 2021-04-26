@@ -5,6 +5,10 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include "tasks.h"
+#include <sys/time.h>
+#include "utils.h"
+#include <sys/select.h>
+
 
 /**
  * @brief struct that encapsulates what a message might be about.
@@ -30,7 +34,7 @@ print: GAVUP (Times up)
  * 
  * @return struct message* - reference of the message created.
  */
-struct message * generate_message();
+struct message * generate_message(int id);
 
 int send_message(int argc, char* argv[], struct message sms);
 

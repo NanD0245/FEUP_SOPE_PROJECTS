@@ -17,6 +17,7 @@ extern struct message m;
 struct argCV {
     int argc;
     char **argv;
+    int id;
 };
 
 /**

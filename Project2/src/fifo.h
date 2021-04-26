@@ -19,13 +19,7 @@ extern struct message m;
  * @brief Creates a publicFIFO object.
  * @return Whether it was successful or not. 
  */
-int create_publicFIFO(int argc, char* argv[]);
-
-/**
- * @brief Eliminates a publicFIFO object.
- * @return Whether it was successful or not. 
- */
-int eliminate_publicFIFO(int argc, char* argv[]);
+int open_publicFIFO(int argc, char* argv[]);
 
 /**
  * @brief Create a privateFIFO object.

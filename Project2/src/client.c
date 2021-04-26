@@ -15,11 +15,9 @@ int main(int argc, char* argv[], char* envp[]) {
 
     init_clock();
 
-    create_publicFIFO(argc,argv);
+    open_publicFIFO(argc,argv);
 
     process_tasks(argc,argv);
-
-    eliminate_publicFIFO(argc,argv);
 
     return 0;
 }

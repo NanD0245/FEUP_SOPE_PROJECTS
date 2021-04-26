@@ -1,1028 +1,484 @@
-[server] initial time: 1619280106, expected final time: 1619280126
+[server] initial time: 1619397620, expected final time: 1619397625
 [server] buffer size: 10
-[server] got: nsecs=20, bufsize=10, fifoname=/tmp/fifo_mim
+[server] got: nsecs=5, bufsize=10, fifoname=/tmp/fifo_mim
 [server] opened server fifo /tmp/fifo_mim
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] all clients closed, will wait for new ones
-[server] server, open serverfifo: Too many open files
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140314219550272
+[lib] a 9 task is starting (with 0 delay)
+[lib] a 9 task has finished
+[server] opened client fifo /tmp/81977.140314211157568
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140314202764864
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140314194372160
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140314185979456
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140314177586752
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140314098529856
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140314090137152
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140314081744448
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140314073351744
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140314064959040
+[lib] a 9 task is starting (with 0 delay)
+[lib] a 9 task has finished
+[server] opened client fifo /tmp/81977.140314056566336
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140314048173632
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313964312128
+[lib] a 6 task is starting (with 0 delay)
+[lib] a 6 task has finished
+[server] opened client fifo /tmp/81977.140313955919424
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313947526720
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140313939134016
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140313930741312
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313922348608
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140313913955904
+[lib] a 6 task is starting (with 0 delay)
+[lib] a 6 task has finished
+[server] opened client fifo /tmp/81977.140313905563200
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313897170496
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140313888777792
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313880385088
+[lib] a 9 task is starting (with 0 delay)
+[lib] a 9 task has finished
+[server] opened client fifo /tmp/81977.140313871992384
+[lib] a 9 task is starting (with 0 delay)
+[lib] a 9 task has finished
+[server] opened client fifo /tmp/81977.140313863599680
+[lib] a 7 task is starting (with 0 delay)
+[lib] a 7 task has finished
+[server] opened client fifo /tmp/81977.140313855206976
+[lib] a 9 task is starting (with 0 delay)
+[lib] a 9 task has finished
+[server] opened client fifo /tmp/81977.140313846814272
+[lib] a 9 task is starting (with 0 delay)
+[lib] a 9 task has finished
+[server] opened client fifo /tmp/81977.140313838421568
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313830028864
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313821636160
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313813243456
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140313804850752
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313796458048
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313788065344
+[lib] a 7 task is starting (with 0 delay)
+[lib] a 7 task has finished
+[server] opened client fifo /tmp/81977.140313779672640
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313771279936
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313762887232
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140313754494528
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313746101824
+[lib] a 7 task is starting (with 0 delay)
+[lib] a 7 task has finished
+[server] opened client fifo /tmp/81977.140313737709120
+[lib] a 7 task is starting (with 0 delay)
+[lib] a 7 task has finished
+[server] opened client fifo /tmp/81977.140313729316416
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140313720923712
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313712531008
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313704138304
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140313695745600
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140313687352896
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140313678960192
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140313670567488
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313662174784
+[lib] a 6 task is starting (with 0 delay)
+[lib] a 6 task has finished
+[server] opened client fifo /tmp/81977.140313653782080
+[lib] a 6 task is starting (with 0 delay)
+[lib] a 6 task has finished
+[server] opened client fifo /tmp/81977.140313645389376
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313636996672
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313628603968
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140313620211264
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313611818560
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313603425856
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313595033152
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140313586640448
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140313578247744
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313569855040
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313561462336
+[lib] a 3 task is starting (with 0 delay)
+[lib] a 3 task has finished
+[server] opened client fifo /tmp/81977.140313553069632
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140313544676928
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313536284224
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313527891520
+[lib] a 7 task is starting (with 0 delay)
+[lib] a 7 task has finished
+[server] opened client fifo /tmp/81977.140313519498816
+[lib] a 1 task is starting (with 0 delay)
+[lib] a 1 task has finished
+[server] opened client fifo /tmp/81977.140313511106112
+[lib] a 5 task is starting (with 0 delay)
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140313502713408
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313494320704
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140313485928000
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313477535296
+[lib] a 4 task is starting (with 0 delay)
+[lib] a 4 task has finished
+[server] opened client fifo /tmp/81977.140313469142592
+[lib] a 8 task is starting (with 0 delay)
+[lib] a 8 task has finished
+[server] opened client fifo /tmp/81977.140313460749888
+[lib] a 7 task is starting (with 0 delay)
+[lib] a 7 task has finished
+[server] opened client fifo /tmp/81977.140313452357184
+[lib] a 7 task is starting (with 0 delay)
+[lib] a 7 task has finished
+[server] opened client fifo /tmp/81977.140313443964480
+[lib] a 2 task is starting (with 0 delay)
+[lib] a 2 task has finished
+[server] opened client fifo /tmp/81977.140313435571776
+[lib] a 5 task is starting (with 0 delay)
+[server] timeout reached: 1619397625
+[server] unlinked server fifo
+[lib] a 5 task has finished
+[server] opened client fifo /tmp/81977.140313427179072
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313418786368
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313410393664
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313402000960
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313393608256
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313385215552
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313376822848
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313368430144
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313360037440
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313351644736
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313343252032
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313334859328
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313326466624
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313318073920
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313309681216
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313301288512
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313292895808
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313284503104
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313276110400
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313267717696
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313259324992
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313250932288
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313242539584
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313234146880
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313225754176
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313217361472
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313208968768
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313200576064
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313192183360
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313183790656
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313175397952
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313167005248
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313158612544
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313150219840
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313141827136
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313133434432
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313125041728
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313116649024
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313108256320
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313099863616
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313091470912
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313083078208
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313074685504
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313066292800
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313057900096
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313049507392
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313041114688
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313032721984
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313024329280
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313015936576
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140313007543872
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312999151168
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312990758464
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312982365760
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312973973056
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312965580352
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312957187648
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312948794944
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312940402240
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312932009536
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312923616832
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312915224128
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312906831424
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312898438720
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312890046016
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312881653312
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312873260608
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312864867904
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312856475200
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312848082496
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312839689792
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312831297088
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312822904384
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312814511680
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312806118976
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312797726272
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312789333568
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312780940864
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312772548160
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312764155456
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312755762752
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312747370048
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312738977344
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312730584640
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312722191936
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312713799232
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312705406528
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312697013824
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312688621120
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312680228416
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312671835712
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312663443008
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312655050304
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312646657600
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312638264896
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312629872192
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312621479488
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312613086784
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312604694080
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312596301376
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312587908672
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312579515968
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312571123264
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312562730560
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312554337856
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312545945152
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312537552448
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312529159744
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312520767040
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312512374336
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312503981632
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312495588928
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312487196224
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312478803520
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312470410816
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312462018112
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312453625408
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312445232704
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312436840000
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312428447296
+[server] unlinked server fifo
+[server] opened client fifo /tmp/81977.140312420054592
+[server] all clients closed, will wait for new ones
+[server] server, open serverfifo: No such file or directory
+[server] unlinked server fifo
 [server] no longer accepting requests
-libgcc_s.so.1 must be installed for pthread_cancel to work

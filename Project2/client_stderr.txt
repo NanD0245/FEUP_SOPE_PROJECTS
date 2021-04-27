@@ -1,1 +1,0 @@
-./script.sh: line 52: ./c: No such file or directory

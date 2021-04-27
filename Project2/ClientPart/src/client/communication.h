@@ -21,14 +21,6 @@ struct message {
 	int tskres;	// task result
 };
 
-/*
-enum Oper = {IWANT, GOTRS, CLOSD, GAVUP};
-
-send: IWANT - recieve: TSKDN -> ALL OK (RES) - print: GOTRS (recieved with success)
-send: IWANT - recieve: 2LATE -> Service is closed (-1) - print: CLOSD (server reject order)
-print: GAVUP (Times up)
-*/
-
 /**
  * @brief Generates a message.
  * 

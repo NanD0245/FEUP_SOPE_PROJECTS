@@ -27,7 +27,7 @@ int recieve_message(int argc, char* argv[], struct message sms) {
     int private_fifo;
     struct message answer; answer.rid = 0; answer.pid = 0;
     char * name = malloc(sizeof(char)*50);
-    snprintf(name,50, "/tmp/%d.%ld", getpid(), pthread_self());
+    snprintf(name,50, "/tmp/%d.%ld", sms.pid, sms.tid);
 
     while ((private_fifo = open(name, O_RDONLY | O_NONBLOCK)) < 0 && check_time(argv)) ;
 

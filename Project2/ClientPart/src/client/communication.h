@@ -11,7 +11,12 @@
 
 
 /**
- * @brief struct that encapsulates what a message might be about.
+ * @brief struct that encapsulates what a message might be about:
+ * RID - request id
+ * PID - process id
+ * TID - thread id
+ * TSKLOAD - task load
+ * TSKRES - task result
  */
 struct message {
 	int rid;	// request id
@@ -23,13 +28,20 @@ struct message {
 
 /**
  * @brief Generates a message.
- * 
  * @return struct message* - reference of the message created.
  */
 struct message * generate_message(int id);
 
+/**
+ * @brief Prints a messages and writes it in the fifo.
+ * @return Whether it was successful or not
+ */
 int send_message(int argc, char* argv[], struct message sms);
 
+/**
+ * @brief Opens the fifo to read the message contained in it.
+ * @return Whether it was successful or not. 
+ */
 int recieve_message(int argc, char* argv[], struct message sms);
 
 

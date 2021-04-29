@@ -14,6 +14,9 @@
 
 extern struct message m;
 
+/**
+ * @brief Struct that encapsulates the comand's arguments.
+ */
 struct argCV {
     int argc;
     char **argv;

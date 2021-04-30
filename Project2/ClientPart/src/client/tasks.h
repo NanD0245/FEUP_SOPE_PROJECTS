@@ -15,7 +15,7 @@
 extern struct message m;
 
 /**
- * @brief Struct that encapsulates the comand's arguments.
+ * @brief Struct that encapsulates the arguments that are passed to the threads.
  */
 struct argCV {
     int argc;
@@ -24,13 +24,13 @@ struct argCV {
 };
 
 /**
- * @brief processes a task. 
+ * @brief Creates threads and its where the main process is done. 
  * @return Indication that it was successful.
  */
 int process_tasks(int argc, char* argv[]);
 
 /**
- * @brief Processes a thread passed on as argument.
+ * @brief Start routine that process all the threads.
  * @return void* 
  */
 void * process_threads(void* arg);

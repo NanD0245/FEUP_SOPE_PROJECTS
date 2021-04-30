@@ -9,23 +9,23 @@
 #include <time.h>
 
 /**
- * @brief Stars the clock and saves the number of clock ticks per second.
+ * @brief Starts the clock seeds the random number generator used by the function rand.
  */
 void init_clock();
 
 /**
- * @brief Checks how much time a process took.
+ * @brief Checks if a timeout has already occurred for client.
  */
 bool check_time(char* argv[]);
 
 /**
- * @brief Gets the remaining time after a process in seconds.
+ * @brief Gets the remaining time before timeout in seconds.
  * @return time remaining, in seconds.
  */
 time_t get_remaining_time_secs(char * argv[]);
 
 /**
- * @brief Gets the remaining time after a process in microseconds.
+ * @brief Gets the remaining time before timeout in microseconds.
  * @return time remaining, in microseconds.
  */
 suseconds_t get_remaining_time_micro(char * argv[]);

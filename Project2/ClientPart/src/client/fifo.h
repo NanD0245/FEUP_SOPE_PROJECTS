@@ -16,13 +16,13 @@ extern struct message m;
 
 
 /**
- * @brief Creates a publicFIFO object.
+ * @brief Opens the publicFIFO.
  * @return Whether it was successful or not. 
  */
 int open_publicFIFO(int argc, char* argv[]);
 
 /**
- * @brief Create a privateFIFO object.
+ * @brief Creates a privateFIFO object.
  * @return Whether it was successful or not. 
  */
 int create_privateFIFO(struct message **sms);

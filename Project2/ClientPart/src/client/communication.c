@@ -3,14 +3,15 @@
 extern int ask_id;
 extern int public_fifo;
 
-struct message * generate_message(int id){
-    struct message * sms = malloc(sizeof(struct message));
+struct message generate_message(int id){
+    struct message sms;
 
-    sms->rid = id;
-    sms->pid = getpid();
-    sms->tid = pthread_self();
-    sms->tskload = rand()%9 + 1;
-    sms->tskres = -1;
+    sms.rid = id;
+    sms.pid = getpid();
+    sms.tid = pthread_self();
+    sms.tskload = rand()%9 + 1;
+    sms.tskres = -1;
+
 
     return sms;
 }
@@ -26,10 +27,10 @@ int send_message(int argc, char* argv[], struct message sms) {
 int recieve_message(int argc, char* argv[], struct message sms) {
     int private_fifo;
     struct message answer; answer.rid = 0; answer.pid = 0;
-    char * name = malloc(sizeof(char)*50);
-    snprintf(name,50, "/tmp/%d.%ld", sms.pid, sms.tid);
+    char name[2000];
+    snprintf(name,2000, "/tmp/%d.%ld", sms.pid, sms.tid);
 
-    while ((private_fifo = open(name, O_RDONLY | O_NONBLOCK)) < 0 && check_time(argv)) ;
+    while ((private_fifo = open(name, O_RDONLY | O_NONBLOCK)) < 0 && check_time(argv)) {usleep(20000);};
 
     int sl;
     fd_set rfds;

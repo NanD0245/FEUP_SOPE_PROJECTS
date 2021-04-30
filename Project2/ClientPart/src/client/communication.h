@@ -30,7 +30,7 @@ struct message {
  * @brief Generates a message with the right parameters.
  * @return struct message* - reference of the message created.
  */
-struct message * generate_message(int id);
+struct message generate_message(int id);
 
 /**
  * @brief Writes the message into the public fifo.

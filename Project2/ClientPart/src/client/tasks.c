@@ -28,6 +28,7 @@ int process_tasks(int argc, char* argv[]){
         pthread_join(ids[i], NULL);
     }
     
+    free(ids);
     
     return 0;
 }
@@ -36,13 +37,13 @@ int process_tasks(int argc, char* argv[]){
 void * process_threads(void* arg) {
     struct argCV *args = (struct argCV*)arg;
     if (check_time(args->argv)) {
-        struct message * sms = generate_message(args->id);
+        struct message sms = generate_message(args->id);
         //ask_id++;
         create_privateFIFO(&sms);
         
         //TODO: server communication
-        send_message(args->argc, args->argv, *sms);
-        recieve_message(args->argc, args->argv, *sms);
+        send_message(args->argc, args->argv, sms);
+        recieve_message(args->argc, args->argv, sms);
 
         //eliminate
         eliminate_privateFIFO(&sms);

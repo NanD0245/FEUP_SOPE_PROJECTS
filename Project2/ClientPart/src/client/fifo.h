@@ -25,10 +25,10 @@ int open_publicFIFO(int argc, char* argv[]);
  * @brief Creates a privateFIFO object.
  * @return Whether it was successful or not. 
  */
-int create_privateFIFO(struct message **sms);
+int create_privateFIFO(struct message *sms);
 
 /**
  * @brief Unlinks a privateFIFO object.
  * @return Whether it was successful or not.
  */
-int eliminate_privateFIFO(struct message **sms);
+int eliminate_privateFIFO(struct message *sms);

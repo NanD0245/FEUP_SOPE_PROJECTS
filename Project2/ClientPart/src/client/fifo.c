@@ -8,10 +8,10 @@ int open_publicFIFO(int argc, char* argv[]){
     return 0;
 }
 
-int create_privateFIFO(struct message **sms) 
+int create_privateFIFO(struct message *sms) 
 {
-    char * name = malloc(sizeof(char)*50);
-    snprintf(name,50, "/tmp/%d.%ld", (*sms)->pid, (*sms)->tid);
+    char name[2000];
+    snprintf(name,2000, "/tmp/%d.%ld", sms->pid, sms->tid);
     if (mkfifo(name , 0666) < 0) {
         perror("ERROR");
         return -1;
@@ -19,10 +19,10 @@ int create_privateFIFO(struct message **sms)
     return 0;
 }
 
-int eliminate_privateFIFO(struct message **sms)
+int eliminate_privateFIFO(struct message *sms)
 {
-    char * name = malloc(sizeof(char)*50);
-    snprintf(name, 50, "/tmp/%d.%ld", (*sms)->pid, (*sms)->tid);
+    char name[2000];
+    snprintf(name, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
     if (unlink(name)){
         perror("ERROR");
         return -1;

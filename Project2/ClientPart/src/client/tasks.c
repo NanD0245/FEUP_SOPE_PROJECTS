@@ -1,6 +1,7 @@
 #include "tasks.h"
 
 int ask_id = 0;
+int closd = 0;
 pthread_mutex_t mut=PTHREAD_MUTEX_INITIALIZER;
 
 int process_tasks(int argc, char* argv[]){
@@ -10,7 +11,7 @@ int process_tasks(int argc, char* argv[]){
     args.argc = argc;
     args.argv = argv;
 
-    while(check_time(argv)){
+    while(check_time(argv) && closd == 0){
 
         ids = realloc(ids, (n_threads + 1)*sizeof(pthread_t));
 

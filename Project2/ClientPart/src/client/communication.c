@@ -1,6 +1,6 @@
 #include "communication.h"
 
-extern int ask_id;
+extern int ask_id, closd;
 extern int public_fifo;
 
 struct message generate_message(int id){
@@ -60,6 +60,7 @@ int recieve_message(int argc, char* argv[], struct message sms) {
         }
         else {
             printf("%ld ; %d ; %d ; %ld ; %d ; %d ; CLOSD\n", time(NULL), answer.rid, sms.pid, sms.tid, answer.tskload, answer.tskres);
+            closd = 1;
         }
     }
     else if (sl == 0) {

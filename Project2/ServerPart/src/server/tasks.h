@@ -1,8 +1,10 @@
 #pragma once
 #include <stdio.h>
+#include <semaphore.h>
 
 #include "utils.h"
 #include "communication.h"
+#include "queue.h"
 
 extern struct message m;
 
@@ -18,3 +20,6 @@ struct argCV {
 int process_tasks(int argc, char* argv[]);
 
 void* process_threads(void *arg);
+
+void* process_sc(void *arg);
+

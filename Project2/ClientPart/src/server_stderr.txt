@@ -1,0 +1,882 @@
+[server] initial time: 1620312964, expected final time: 1620312969
+[server] buffer size: 10
+[server] got: nsecs=5, bufsize=10, fifoname=/tmp/fifo_mim
+[server] opened server fifo /tmp/fifo_mim
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847224759872
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847216367168
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[lib] a 7 task is starting (with 100 delay)
+[server] opened client fifo /tmp/293497.139847207974464
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847199581760
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847191189056
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847182796352
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847174403648
+[lib] a 1 task is starting (with 100 delay)
+[lib] a 1 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847166010944
+[lib] a 1 task is starting (with 100 delay)
+[lib] a 1 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847087945280
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 3 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847079552576
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 3 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847071159872
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847062767168
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847054374464
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847045981760
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847037589056
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847029196352
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847020803648
+[lib] a 3 task is starting (with 100 delay)
+[lib] a 3 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847004018240
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139847012410944
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846995625536
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846987232832
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846978840128
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846970447424
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846953662016
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846962054720
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846945269312
+[lib] a 9 task is starting (with 100 delay)
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846936876608
+[lib] a 1 task is starting (with 100 delay)
+[lib] a 9 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846928483904
+[lib] a 1 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846920091200
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846911698496
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846903305792
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846894913088
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[lib] a 8 task is starting (with 100 delay)
+[server] opened client fifo /tmp/293497.139846878127680
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846886520384
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846869734976
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846861342272
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846852949568
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846844556864
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846836164160
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846827771456
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846819378752
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846810986048
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846802593344
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846794200640
+[lib] a 1 task is starting (with 100 delay)
+[lib] a 1 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846785807936
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846769022528
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846777415232
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 3 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846760629824
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846752237120
+[lib] a 3 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846727059008
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846735451712
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846743844416
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846718666304
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[lib] a 1 task is starting (with 100 delay)
+[server] opened client fifo /tmp/293497.139846710273600
+[lib] a 1 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846701880896
+[lib] a 5 task is starting (with 100 delay)
+[lib] a 5 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846693488192
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846685095488
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 3 task is starting (with 100 delay)
+[lib] a 9 task is starting (with 100 delay)
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846676702784
+[lib] a 3 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846659917376
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846668310080
+[lib] a 9 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[lib] a 6 task is starting (with 100 delay)
+[server] opened client fifo /tmp/293497.139846651524672
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846643131968
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846626346560
+[lib] a 2 task is starting (with 100 delay)
+[lib] a 2 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846609561152
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846634739264
+[lib] a 8 task has finished
+[lib] a 6 task is starting (with 100 delay)
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846617953856
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 4 task is starting (with 100 delay)
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846601168448
+[lib] a 6 task has finished
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846592775744
+[server] opened client fifo /tmp/293497.139846584383040
+[lib] a 6 task is starting (with 100 delay)
+[lib] a 8 task is starting (with 100 delay)
+[lib] a 6 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846575990336
+[lib] a 7 task is starting (with 100 delay)
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846567597632
+[lib] a 7 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846559204928
+[lib] a 1 task is starting (with 100 delay)
+[lib] a 1 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846550812224
+[lib] a 3 task is starting (with 100 delay)
+[lib] a 3 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846542419520
+[lib] a 3 task is starting (with 100 delay)
+[lib] a 3 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846534026816
+[lib] a 8 task is starting (with 100 delay)
+[server] timeout reached: 1620312969
+[server] unlinked server fifo
+[lib] a 3 task is starting (with 100 delay)
+[lib] a 4 task is starting (with 100 delay)
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846492063296
+[lib] a 8 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846525634112
+[lib] a 3 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846517241408
+[lib] a 9 task is starting (with 100 delay)
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846483670592
+[lib] a 4 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846508848704
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846475277888
+[lib] a 9 task has finished
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846500456000
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846466885184
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846458492480
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846450099776
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846441707072
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846433314368
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846424921664
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846416528960
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846408136256
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846399743552
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846391350848
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846382958144
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846374565440
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846366172736
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846357780032
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846349387328
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846340994624
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846332601920
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846324209216
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846315816512
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846307423808
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846299031104
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846290638400
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846282245696
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846273852992
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846265460288
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846257067584
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846248674880
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846240282176
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846231889472
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846223496768
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846215104064
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846206711360
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846198318656
+[server] unlinked server fifo
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846189925952
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846181533248
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846173140544
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846164747840
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846156355136
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846147962432
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846139569728
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846131177024
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846122784320
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846114391616
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846105998912
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846097606208
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846089213504
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846080820800
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846072428096
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846064035392
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846055642688
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846047249984
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846038857280
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846030464576
+[server] unlinked server fifo
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846022071872
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139846013679168
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139846005286464
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845996893760
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845988501056
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845980108352
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845971715648
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845963322944
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845954930240
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845946537536
+[server] unlinked server fifo
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845938144832
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845929752128
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845921359424
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845912966720
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845904574016
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845896181312
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845887788608
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845879395904
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845871003200
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845862610496
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845854217792
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845845825088
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845837432384
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845829039680
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845820646976
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845812254272
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845803861568
+[server] unlinked server fifo
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845795468864
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845787076160
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845778683456
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845770290752
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845761898048
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845753505344
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845745112640
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845736719936
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845728327232
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845719934528
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845711541824
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845703149120
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845694756416
+[server] unlinked server fifo
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845686363712
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845677971008
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845669578304
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845661185600
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845652792896
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845644400192
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845636007488
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845627614784
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845619222080
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845610829376
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845602436672
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845594043968
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845585651264
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845577258560
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845568865856
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845560473152
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845552080448
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845543687744
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845535295040
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845526902336
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845518509632
+[server] unlinked server fifo
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] opened client fifo /tmp/293497.139845510116928
+[server] before sem_wait(&writer_sem)
+[server] after sem_wait(&writer_sem)
+[server] unlinked server fifo
+[server] opened client fifo /tmp/293497.139845501724224
+[server] all clients closed, will wait for new ones
+[server] server, open serverfifo: No such file or directory
+[server] unlinked server fifo
+[server] no longer accepting requests
+[server] no. running: 0

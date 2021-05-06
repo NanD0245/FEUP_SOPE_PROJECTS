@@ -7,6 +7,8 @@
 #include "tasks.h"
 #include <sys/time.h>
 #include "utils.h"
+#include "mylib.h"
+#include "register.h"
 #include <sys/select.h>
 
 
@@ -26,6 +28,14 @@ struct message {
 	int tskres;	// task result
 };
 
+void update_message(struct message * sms);
+
 struct message recieve_message(int argc,char* argv[]);
+
+int insert_message(struct message * sms);
+
+int send_message(struct message * sms);
+
+int notify_finish();
 
 

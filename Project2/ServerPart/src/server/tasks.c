@@ -7,13 +7,12 @@ sem_t full;
 
 int process_tasks(int argc, char* argv[]) {
 
+    initQueue((argc == 4) ? 10 : atoi(argv[4]));
+
     pthread_t sc;  
 
     pthread_create(&sc, NULL, process_sc, NULL);
 
-    initQueue((argc == 4) ? 10 : atoi(argv[4]));
-
-    printf("%d\n", size());
 
     if (sem_init(&empty, 0, size()) != 0 || sem_init(&full, 0, 0)) {
         perror("ERROR - sem_init");
@@ -22,6 +21,8 @@ int process_tasks(int argc, char* argv[]) {
 
     int n_threads = 0;
     pthread_t * ids = (pthread_t *)malloc(sizeof(pthread_t));
+
+    //struct message* all_messages = malloc(sizeof(struct message));
 
     while (check_time(argc, argv)) {
         
@@ -51,6 +52,9 @@ int process_tasks(int argc, char* argv[]) {
         pthread_join(ids[i], NULL);
     }
 
+    sem_destroy(&empty);
+    sem_destroy(&full);
+
     //return 0;
 
     pthread_join(sc, NULL);
@@ -72,6 +76,8 @@ void* process_threads(void *arg) {
         register_message(args.sms, "TSKEX");
 
         insert_message(args.sms);
+
+        printf("passei - insert_message\n");
     }
 
     return NULL;
@@ -79,8 +85,15 @@ void* process_threads(void *arg) {
 
 void * process_sc(void* arg) { 
     struct message* sms;
+
+    int val;
+
+    sem_getvalue(&full, &val);
+    printf("sem_full: %d\n", val);
+    sem_getvalue(&empty, &val);
+    printf("sem_empty: %d\n", val);
+
     while (1) {
-        //blocks here
         if (sem_wait(&full) != 0) { continue; }
 
         pthread_mutex_lock(&mutex);

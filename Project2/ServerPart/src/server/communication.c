@@ -59,7 +59,13 @@ int insert_message(struct message * sms) {
         return -1;
     }
 
+    
+
     pthread_mutex_lock(&mutex);
+
+    int val;
+    sem_getvalue(&empty, &val);
+    printf("sem_empty_insert: %d\n", val);
 
     insert(sms);
 
@@ -70,6 +76,11 @@ int insert_message(struct message * sms) {
         perror("ERROR - sem_post");
         return -1;
     }
+
+    sem_getvalue(&full, &val);
+    printf("sem_full_insert: %d\n", val);
+
+    sleep(1);
 
     return 0;
 }
@@ -106,11 +117,11 @@ int send_message(struct message *sms) {
 
 
 int notify_finish() {
-    struct message sms;
-    sms.tskres = -9999;
+    struct message * sms = malloc(sizeof(struct message));
+    sms->tskres = -9999;
 
     printf("send final message\n");
-    insert_message(&sms);
+    insert_message(sms);
 
     return 0;
 }

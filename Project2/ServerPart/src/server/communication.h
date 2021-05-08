@@ -30,7 +30,7 @@ struct message {
 
 void update_message(struct message * sms);
 
-struct message recieve_message(int argc,char* argv[]);
+int recieve_message(int argc,char* argv[], struct message * sms);
 
 int insert_message(struct message * sms);
 

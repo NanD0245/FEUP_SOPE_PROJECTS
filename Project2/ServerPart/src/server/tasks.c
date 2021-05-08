@@ -22,23 +22,23 @@ int process_tasks(int argc, char* argv[]) {
 
     int n_threads = 0;
     pthread_t * ids = (pthread_t *)malloc(sizeof(pthread_t));
-    struct argCV args;
-    args.argc = argc;
-    args.argv = argv;
 
     while (check_time(argc, argv)) {
+        
+        struct argCV * args = malloc(sizeof(struct argCV));
+        args->argc = argc;
+        args->argv = argv;
 
-        struct message sms = recieve_message(argc, argv);
-
-        if (sms.tskload == -1) {
-            printf("message not received!!"); sleep(5); break;
+        struct message * sms = malloc(sizeof(struct message));
+        if (recieve_message(argc, argv, sms) != 0) {
+            continue;
         }
         
-        args.sms = &sms;
+        args->sms = sms;
 
         ids = realloc(ids, (n_threads + 1)*sizeof(pthread_t));
 
-        if(pthread_create(&ids[n_threads],NULL,process_threads,&args) != 0) {
+        if(pthread_create(&ids[n_threads],NULL,process_threads,(void*)args) != 0) {
 			perror("ERROR - pthread_create");
 			exit(3);
 		}
@@ -50,8 +50,12 @@ int process_tasks(int argc, char* argv[]) {
     for (int i = 0; i < n_threads; i++) {
         pthread_join(ids[i], NULL);
     }
-    
+
+    //return 0;
+
     pthread_join(sc, NULL);
+
+    freeQueue();
 
     free(ids);
 
@@ -59,16 +63,15 @@ int process_tasks(int argc, char* argv[]) {
 }
 
 void* process_threads(void *arg) {
-    struct argCV *args = (struct argCV*)arg;
+    struct argCV args = *(struct argCV*)arg;
+    free(arg);
 
-    if (check_time(args->argc, args->argv)) {
-        process_message(args->sms);
+    if (check_time(args.argc, args.argv)) {
+        process_message(args.sms);
 
-        update_message(args->sms);
+        register_message(args.sms, "TSKEX");
 
-        register_message(args->sms, "TSKEX");
-
-        insert_message(args->sms);
+        insert_message(args.sms);
     }
 
     return NULL;
@@ -78,7 +81,7 @@ void * process_sc(void* arg) {
     struct message* sms;
     while (1) {
         //blocks here
-        if (sem_wait(&full) != 0) { printf("CICLO\n"); continue; }
+        if (sem_wait(&full) != 0) { continue; }
 
         pthread_mutex_lock(&mutex);
         sms = pop();

@@ -7,7 +7,7 @@ int rear = -1;
 int itemCount = 0;
 
 void initQueue(int max_size) {
-   queue = malloc( max * sizeof(struct message));
+   queue = malloc( max_size * sizeof(struct message));
    max = max_size;
 }
 

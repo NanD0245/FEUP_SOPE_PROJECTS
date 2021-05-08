@@ -9,10 +9,8 @@ void update_message(struct message * sms) {
     sms->tid = pthread_self();
 }
 
-struct message recieve_message(int argc, char* argv[]) {
+int recieve_message(int argc, char* argv[], struct message * sms) {
     int public_fifo;
-    struct message answer;
-    answer.tskload = -1;
     char name[2000];
     snprintf(name, 2000, "%s", argv[argc - 1]);
 
@@ -36,16 +34,22 @@ struct message recieve_message(int argc, char* argv[]) {
 
     if ((sl = select(public_fifo + 1, &rfds, NULL, NULL, &tmv)) == -1) {
         perror("ERROR - select");
+        return 1;
     }
     else if (sl > 0) {
-        if (read(public_fifo, &answer, sizeof(struct message)) < 0)
+        int r;
+        if ((r = read(public_fifo, sms, sizeof(struct message))) < 0) {
             perror("ERROR - read");
+            close(public_fifo);
+            return 1;
+        } else if (r == 0) { return 1; }
         else {
-            register_message(&answer, "RECVD");
+            register_message(sms, "RECVD");
+            close(public_fifo);
+            return 0;
         }
-    } 
-    close(public_fifo);
-    return answer;
+    }
+    return 1;
 }
 
 int insert_message(struct message * sms) {
@@ -72,8 +76,9 @@ int insert_message(struct message * sms) {
 
 int send_message(struct message *sms) {
     char name[2000];
-    snprintf(name, 2000, "/tmp/%d/%ld", sms->pid, sms->tid);
-
+    snprintf(name, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
+    printf("%s\n", name);
+    struct message message = *sms;
     int private_fifo;
 
     if ((private_fifo = open(name, O_WRONLY | O_NONBLOCK)) == -1) {
@@ -81,18 +86,21 @@ int send_message(struct message *sms) {
     }
     else {
 
-        if (write(private_fifo, sms, sizeof(struct message)) == -1)
+        if (write(private_fifo, &message, sizeof(struct message)) == -1)
             register_message(sms, "FAILD");
         else {
-            if (sms->tskres == -1)
+            if (sms->tskres == -1) {
                 register_message(sms, "2LATE");
-            else
+                close(private_fifo);
+            }
+            else {
                 register_message(sms, "TSKDN");
+                close(private_fifo);
+            }
         }
     }
 
-    close(private_fifo);
-
+    free(sms);
     return 0;
 }
 
@@ -101,6 +109,7 @@ int notify_finish() {
     struct message sms;
     sms.tskres = -9999;
 
+    printf("send final message\n");
     insert_message(&sms);
 
     return 0;

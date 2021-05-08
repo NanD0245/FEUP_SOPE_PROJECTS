@@ -7,4 +7,4 @@ c: ClientPart/src/client/client.c
 	gcc -Wall -o c ClientPart/src/client/client.c ClientPart/src/client/communication.c ClientPart/src/client/tasks.c ClientPart/src/client/fifo.c ClientPart/src/client/utils.c -pthread
 
 clean:
-	rm -f s c
+	rm -f s c name*

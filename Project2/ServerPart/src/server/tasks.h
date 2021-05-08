@@ -6,7 +6,7 @@
 #include "communication.h"
 #include "queue.h"
 
-extern struct message m;
+//extern struct message m;
 
 /**
  * @brief Struct that encapsulates the arguments that are passed to the threads.

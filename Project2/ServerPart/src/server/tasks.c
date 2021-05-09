@@ -1,41 +1,57 @@
 #include "tasks.h"
 
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t output_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 sem_t empty;
 sem_t full;
 
-int process_tasks(int argc, char* argv[]) {
+int public_fifo;
 
+struct message* all_messages;
+
+int process_tasks(int argc, char* argv[]) {
+    
     initQueue((argc == 4) ? 10 : atoi(argv[4]));
 
-    pthread_t sc;  
+    char name[2000];
+    snprintf(name, 2000, "%s", argv[argc - 1]);
 
-    pthread_create(&sc, NULL, process_sc, NULL);
-
+    if ((public_fifo = open(name, O_RDONLY | O_NONBLOCK)) < 0 ) {
+        perror("ERROR - open");
+        return 1;
+    }
 
     if (sem_init(&empty, 0, size()) != 0 || sem_init(&full, 0, 0)) {
         perror("ERROR - sem_init");
         return 1;
     }
 
-    int n_threads = 0;
-    pthread_t * ids = (pthread_t *)malloc(sizeof(pthread_t));
+    pthread_t sc;  
 
-    //struct message* all_messages = malloc(sizeof(struct message));
+    pthread_create(&sc, NULL, process_sc, NULL);
+
+    int n_threads = 0, n_messages = 0;
+    pthread_t * ids = malloc(sizeof(pthread_t));
+
+    all_messages = malloc(1000 * sizeof(struct message));
 
     while (check_time(argc, argv)) {
         
         struct argCV * args = malloc(sizeof(struct argCV));
         args->argc = argc;
         args->argv = argv;
+        
+        //pthread_mutex_lock(&output_mutex);
+        //all_messages = realloc(all_messages, (n_messages + 1) * sizeof(struct message));
+        //pthread_mutex_unlock(&output_mutex);
 
-        struct message * sms = malloc(sizeof(struct message));
-        if (recieve_message(argc, argv, sms) != 0) {
+
+        if (recieve_message(argc, argv, &all_messages[n_messages]) != 0) {
             continue;
         }
-        
-        args->sms = sms;
+
+        args->id = n_messages;
 
         ids = realloc(ids, (n_threads + 1)*sizeof(pthread_t));
 
@@ -44,20 +60,23 @@ int process_tasks(int argc, char* argv[]) {
 			exit(3);
 		}
         n_threads++;
+        n_messages++;
     }
 
     notify_finish();
-
+    
+    pthread_join(sc, NULL);
+    
     for (int i = 0; i < n_threads; i++) {
         pthread_join(ids[i], NULL);
     }
-
+    
     sem_destroy(&empty);
     sem_destroy(&full);
 
-    //return 0;
-
-    pthread_join(sc, NULL);
+    close(public_fifo);
+    
+    free(all_messages);
 
     freeQueue();
 
@@ -67,17 +86,23 @@ int process_tasks(int argc, char* argv[]) {
 }
 
 void* process_threads(void *arg) {
+
+    register_message(&all_messages[((struct argCV*)arg)->id], "CHECK_ARG");
+
     struct argCV args = *(struct argCV*)arg;
+
     free(arg);
 
     if (check_time(args.argc, args.argv)) {
-        process_message(args.sms);
+        pthread_mutex_lock(&output_mutex);
 
-        register_message(args.sms, "TSKEX");
+        process_message(&(all_messages[args.id]));
 
-        insert_message(args.sms);
+        pthread_mutex_unlock(&output_mutex);
 
-        printf("passei - insert_message\n");
+        register_message(&all_messages[args.id], "TSKEX");
+
+        insert_message(&all_messages[args.id]);
     }
 
     return NULL;
@@ -86,15 +111,10 @@ void* process_threads(void *arg) {
 void * process_sc(void* arg) { 
     struct message* sms;
 
-    int val;
-
-    sem_getvalue(&full, &val);
-    printf("sem_full: %d\n", val);
-    sem_getvalue(&empty, &val);
-    printf("sem_empty: %d\n", val);
-
     while (1) {
         if (sem_wait(&full) != 0) { continue; }
+
+        //pthread_mutex_lock(&output_mutex);
 
         pthread_mutex_lock(&mutex);
         sms = pop();
@@ -105,6 +125,14 @@ void * process_sc(void* arg) {
         if (sms->tskres == -9999) { break; }
 
         send_message(sms);
+        //pthread_mutex_unlock(&output_mutex);
+    }
+    while(!isEmpty()) {
+        pthread_mutex_lock(&mutex);
+        printf("size : %d\n", getItemCount());
+        sms = pop();
+        send_message(sms);
+        pthread_mutex_unlock(&mutex);
     }
     return NULL;
  }

@@ -5,8 +5,8 @@
 #include "utils.h"
 #include "communication.h"
 #include "queue.h"
+#include "mylib.h"
 
-//extern struct message m;
 
 /**
  * @brief Struct that encapsulates the arguments that are passed to the threads.
@@ -14,7 +14,7 @@
 struct argCV {
     int argc;
     char **argv;
-    struct message * sms;
+    int id;
 };
 
 int process_tasks(int argc, char* argv[]);

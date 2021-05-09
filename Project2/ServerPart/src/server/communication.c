@@ -4,17 +4,15 @@ extern pthread_mutex_t mutex;
 extern sem_t full;
 extern sem_t empty;
 
+extern int public_fifo;
+
 void update_message(struct message * sms) {
     sms->pid = getpid();
     sms->tid = pthread_self();
 }
 
 int recieve_message(int argc, char* argv[], struct message * sms) {
-    int public_fifo;
-    char name[2000];
-    snprintf(name, 2000, "%s", argv[argc - 1]);
-
-    while ((public_fifo = open(name, O_RDONLY | O_NONBLOCK)) < 0 && check_time(argc, argv)) {usleep(20000);};
+    
 
     int sl;
     fd_set rfds;
@@ -40,12 +38,10 @@ int recieve_message(int argc, char* argv[], struct message * sms) {
         int r;
         if ((r = read(public_fifo, sms, sizeof(struct message))) < 0) {
             perror("ERROR - read");
-            close(public_fifo);
             return 1;
         } else if (r == 0) { return 1; }
         else {
             register_message(sms, "RECVD");
-            close(public_fifo);
             return 0;
         }
     }
@@ -59,13 +55,7 @@ int insert_message(struct message * sms) {
         return -1;
     }
 
-    
-
     pthread_mutex_lock(&mutex);
-
-    int val;
-    sem_getvalue(&empty, &val);
-    printf("sem_empty_insert: %d\n", val);
 
     insert(sms);
 
@@ -77,18 +67,12 @@ int insert_message(struct message * sms) {
         return -1;
     }
 
-    sem_getvalue(&full, &val);
-    printf("sem_full_insert: %d\n", val);
-
-    sleep(1);
-
     return 0;
 }
 
 int send_message(struct message *sms) {
     char name[2000];
     snprintf(name, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
-    printf("%s\n", name);
     struct message message = *sms;
     int private_fifo;
 
@@ -111,7 +95,6 @@ int send_message(struct message *sms) {
         }
     }
 
-    free(sms);
     return 0;
 }
 
@@ -120,7 +103,6 @@ int notify_finish() {
     struct message * sms = malloc(sizeof(struct message));
     sms->tskres = -9999;
 
-    printf("send final message\n");
     insert_message(sms);
 
     return 0;

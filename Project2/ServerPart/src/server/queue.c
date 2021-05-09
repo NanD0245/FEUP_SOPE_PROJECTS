@@ -27,6 +27,10 @@ int size() {
    return max;
 }  
 
+int getItemCount() {
+   return itemCount;
+}
+
 void insert(struct message* data) {
 
    if(!isFull()) {

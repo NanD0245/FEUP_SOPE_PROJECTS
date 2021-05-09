@@ -23,3 +23,5 @@ void insert(struct message* data);
 struct message* pop();
 
 void freeQueue();
+
+int getItemCount();

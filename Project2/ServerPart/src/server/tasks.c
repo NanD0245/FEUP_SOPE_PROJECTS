@@ -38,9 +38,7 @@ int process_tasks(int argc, char* argv[]) {
 
     while (check_time(argc, argv)) {
         
-        struct argCV * args = malloc(sizeof(struct argCV));
-        args->argc = argc;
-        args->argv = argv;
+        
         
         //pthread_mutex_lock(&output_mutex);
         //all_messages = realloc(all_messages, (n_messages + 1) * sizeof(struct message));
@@ -51,6 +49,9 @@ int process_tasks(int argc, char* argv[]) {
             continue;
         }
 
+        struct argCV * args = malloc(sizeof(struct argCV));
+        args->argc = argc;
+        args->argv = argv;
         args->id = n_messages;
 
         ids = realloc(ids, (n_threads + 1)*sizeof(pthread_t));
@@ -81,6 +82,9 @@ int process_tasks(int argc, char* argv[]) {
     freeQueue();
 
     free(ids);
+
+    printf("%ld\n", sizeof(struct message));
+    printf("%ld\n", sizeof(struct argCV));
 
     return 0;
 }
@@ -122,7 +126,7 @@ void * process_sc(void* arg) {
 
         if (sem_post(&empty) != 0) { perror("ERROR - sem_post"); }
 
-        if (sms->tskres == -9999) { break; }
+        if (sms->tskres == -9999) { free(sms); break; }
 
         send_message(sms);
         //pthread_mutex_unlock(&output_mutex);

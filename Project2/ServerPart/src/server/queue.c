@@ -5,6 +5,7 @@ int max;
 int front = 0;
 int rear = -1;
 int itemCount = 0;
+int num_messages = 0;
 
 void initQueue(int max_size) {
    queue = malloc( max_size * sizeof(struct message));
@@ -41,7 +42,12 @@ void insert(struct message* data) {
 
       queue[++rear] = data;
       itemCount++;
+      num_messages++;
    }
+}
+
+int getNumMessages() {
+   return num_messages;
 }
 
 struct message* pop() {

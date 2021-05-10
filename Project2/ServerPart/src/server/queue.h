@@ -25,3 +25,5 @@ struct message* pop();
 void freeQueue();
 
 int getItemCount();
+
+int getNumMessages();

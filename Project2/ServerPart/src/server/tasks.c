@@ -37,9 +37,6 @@ int process_tasks(int argc, char* argv[]) {
     all_messages = malloc(1000 * sizeof(struct message));
 
     while (check_time(argc, argv)) {
-        
-        
-        
         //pthread_mutex_lock(&output_mutex);
         //all_messages = realloc(all_messages, (n_messages + 1) * sizeof(struct message));
         //pthread_mutex_unlock(&output_mutex);
@@ -63,6 +60,11 @@ int process_tasks(int argc, char* argv[]) {
         n_threads++;
         n_messages++;
     }
+
+    unlink_publicFIFO(argc,argv);
+
+    while (getNumMessages() != n_messages) ;
+
 
     notify_finish();
     
@@ -97,17 +99,15 @@ void* process_threads(void *arg) {
 
     free(arg);
 
+    all_messages[args.id].tskres = task(all_messages[args.id].tskload);
+
     if (check_time(args.argc, args.argv)) {
-        pthread_mutex_lock(&output_mutex);
-
-        process_message(&(all_messages[args.id]));
-
-        pthread_mutex_unlock(&output_mutex);
-
         register_message(&all_messages[args.id], "TSKEX");
-
-        insert_message(&all_messages[args.id]);
+    } else {
+        all_messages[args.id].tskres = -1;
     }
+
+    insert_message(&all_messages[args.id]);
 
     return NULL;
 }
@@ -131,6 +131,7 @@ void * process_sc(void* arg) {
         send_message(sms);
         //pthread_mutex_unlock(&output_mutex);
     }
+
     while(!isEmpty()) {
         pthread_mutex_lock(&mutex);
         printf("size : %d\n", getItemCount());
@@ -138,5 +139,6 @@ void * process_sc(void* arg) {
         send_message(sms);
         pthread_mutex_unlock(&mutex);
     }
+    
     return NULL;
  }

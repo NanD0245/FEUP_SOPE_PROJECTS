@@ -5,7 +5,8 @@
 #include "utils.h"
 #include "communication.h"
 #include "queue.h"
-#include "mylib.h"
+#include "lib.h"
+#include "fifo.h"
 
 
 /**

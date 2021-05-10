@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
 
 	process_tasks(argc, argv);
 
-	unlink_publicFIFO(argc, argv);
+	//unlink_publicFIFO(argc, argv);
 
 	return 0;
 }

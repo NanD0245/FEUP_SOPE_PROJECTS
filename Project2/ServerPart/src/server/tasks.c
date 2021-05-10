@@ -1,14 +1,13 @@
 #include "tasks.h"
 
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
-pthread_mutex_t output_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 sem_t empty;
 sem_t full;
 
-int public_fifo;
-
 struct message* all_messages;
+
+int public_fifo;
 
 int process_tasks(int argc, char* argv[]) {
     
@@ -35,12 +34,11 @@ int process_tasks(int argc, char* argv[]) {
     pthread_t * ids = malloc(sizeof(pthread_t));
 
     all_messages = malloc(1000 * sizeof(struct message));
+    //all_messages = malloc(sizeof(struct message));
 
     while (check_time(argc, argv)) {
-        //pthread_mutex_lock(&output_mutex);
-        //all_messages = realloc(all_messages, (n_messages + 1) * sizeof(struct message));
-        //pthread_mutex_unlock(&output_mutex);
 
+        //all_messages = realloc(all_messages, (n_messages + 1) * sizeof(struct message));
 
         if (recieve_message(argc, argv, &all_messages[n_messages]) != 0) {
             continue;
@@ -65,7 +63,6 @@ int process_tasks(int argc, char* argv[]) {
 
     while (getNumMessages() != n_messages) ;
 
-
     notify_finish();
     
     pthread_join(sc, NULL);
@@ -85,15 +82,10 @@ int process_tasks(int argc, char* argv[]) {
 
     free(ids);
 
-    printf("%ld\n", sizeof(struct message));
-    printf("%ld\n", sizeof(struct argCV));
-
     return 0;
 }
 
 void* process_threads(void *arg) {
-
-    register_message(&all_messages[((struct argCV*)arg)->id], "CHECK_ARG");
 
     struct argCV args = *(struct argCV*)arg;
 
@@ -118,8 +110,6 @@ void * process_sc(void* arg) {
     while (1) {
         if (sem_wait(&full) != 0) { continue; }
 
-        //pthread_mutex_lock(&output_mutex);
-
         pthread_mutex_lock(&mutex);
         sms = pop();
         pthread_mutex_unlock(&mutex);
@@ -129,7 +119,6 @@ void * process_sc(void* arg) {
         if (sms->tskres == -9999) { free(sms); break; }
 
         send_message(sms);
-        //pthread_mutex_unlock(&output_mutex);
     }
 
     while(!isEmpty()) {

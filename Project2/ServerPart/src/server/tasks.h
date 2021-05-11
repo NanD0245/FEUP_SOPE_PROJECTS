@@ -1,6 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <semaphore.h>
+#include <unistd.h>
 
 #include "utils.h"
 #include "communication.h"
@@ -15,7 +16,7 @@
 struct argCV {
     int argc;
     char **argv;
-    int id;
+    struct message * msg;
 };
 
 int process_tasks(int argc, char* argv[]);
@@ -23,4 +24,6 @@ int process_tasks(int argc, char* argv[]);
 void* process_threads(void *arg);
 
 void* process_sc(void *arg);
+
+void free_message(struct message * sms, char * path);
 

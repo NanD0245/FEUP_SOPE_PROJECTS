@@ -33,7 +33,7 @@ int recieve_message(int argc,char* argv[], struct message * sms);
 
 int insert_message(struct message * sms);
 
-int send_message(struct message * sms);
+int send_message(struct message * sms, char * path);
 
 int notify_finish();
 

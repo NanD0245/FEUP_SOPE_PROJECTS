@@ -5,8 +5,6 @@ pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 sem_t empty;
 sem_t full;
 
-struct message* all_messages;
-
 int public_fifo;
 
 int process_tasks(int argc, char* argv[]) {
@@ -32,22 +30,19 @@ int process_tasks(int argc, char* argv[]) {
 
     int n_threads = 0, n_messages = 0;
     pthread_t * ids = malloc(sizeof(pthread_t));
-
-    all_messages = malloc(1000 * sizeof(struct message));
-    //all_messages = malloc(sizeof(struct message));
+    struct message m;
 
     while (check_time(argc, argv)) {
 
-        //all_messages = realloc(all_messages, (n_messages + 1) * sizeof(struct message));
+        if (recieve_message(argc, argv, &m) != 0) { continue; }
 
-        if (recieve_message(argc, argv, &all_messages[n_messages]) != 0) {
-            continue;
-        }
+        struct message * sms = malloc(sizeof(struct message));
+        *sms = m;
 
         struct argCV * args = malloc(sizeof(struct argCV));
         args->argc = argc;
         args->argv = argv;
-        args->id = n_messages;
+        args->msg = sms;
 
         ids = realloc(ids, (n_threads + 1)*sizeof(pthread_t));
 
@@ -76,8 +71,6 @@ int process_tasks(int argc, char* argv[]) {
 
     close(public_fifo);
     
-    free(all_messages);
-
     freeQueue();
 
     free(ids);
@@ -91,15 +84,15 @@ void* process_threads(void *arg) {
 
     free(arg);
 
-    all_messages[args.id].tskres = task(all_messages[args.id].tskload);
+    args.msg->tskres = task(args.msg->tskload);
 
     if (check_time(args.argc, args.argv)) {
-        register_message(&all_messages[args.id], "TSKEX");
+        register_message(args.msg, "TSKEX");
     } else {
-        all_messages[args.id].tskres = -1;
+        args.msg->tskres = -1;
     }
 
-    insert_message(&all_messages[args.id]);
+    insert_message(args.msg);
 
     return NULL;
 }
@@ -118,16 +111,31 @@ void * process_sc(void* arg) {
 
         if (sms->tskres == -9999) { free(sms); break; }
 
-        send_message(sms);
+        char path[2000];
+        snprintf(path, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
+
+        send_message(sms, path);
+
+        free_message(sms, path);
     }
 
     while(!isEmpty()) {
         pthread_mutex_lock(&mutex);
-        printf("size : %d\n", getItemCount());
         sms = pop();
-        send_message(sms);
         pthread_mutex_unlock(&mutex);
+
+        char path[2000];
+        snprintf(path, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
+
+        send_message(sms, path);
+        free_message(sms, path);
     }
     
     return NULL;
  }
+
+
+void free_message(struct message * sms, char * path) {
+    while (access(path, F_OK) == 0) ;
+    free(sms);
+}

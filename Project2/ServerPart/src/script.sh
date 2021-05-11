@@ -17,9 +17,9 @@ main() {
 			run_client -t 10 /tmp/fifo_"${USER}";;
 		2) echo ":::: Test case $1 - Server dies first";
 			clean;
-			run_server -t 10 -l 10 /tmp/fifo_"${USER}";
+			run_server -t 5 -l 10 /tmp/fifo_"${USER}";
 			sleep 1 ;
-			run_client -t 20 /tmp/fifo_"${USER}";;
+			run_client -t 10 /tmp/fifo_"${USER}";;
 		3) echo ":::: Test case $1 - Server starts late";
 			clean;
 			run_client -t 10 /tmp/fifo_"${USER}";

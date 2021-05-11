@@ -6,6 +6,8 @@ extern sem_t empty;
 
 extern int public_fifo;
 
+struct message* all_messages;
+
 void update_message(struct message * sms) {
     sms->pid = getpid();
     sms->tid = pthread_self();
@@ -70,13 +72,13 @@ int insert_message(struct message * sms) {
     return 0;
 }
 
-int send_message(struct message *sms) {
-    char name[2000];
-    snprintf(name, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
+int send_message(struct message *sms, char * path) {
     struct message message = *sms;
     int private_fifo;
 
-    if ((private_fifo = open(name, O_WRONLY | O_NONBLOCK)) == -1) {
+    update_message(sms);
+
+    if ((private_fifo = open(path, O_WRONLY | O_NONBLOCK)) == -1) {
         register_message(sms, "FAILD");
     }
     else {

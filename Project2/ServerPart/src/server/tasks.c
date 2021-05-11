@@ -31,10 +31,10 @@ int process_tasks(int argc, char* argv[]) {
     int n_threads = 0, n_messages = 0;
     pthread_t * ids = malloc(sizeof(pthread_t));
     struct message m;
+    int r;
+    while ((r = recieve_message(argc, argv, &m)) == 0 || check_time(argc, argv)) {
 
-    while (check_time(argc, argv)) {
-
-        if (recieve_message(argc, argv, &m) != 0) { continue; }
+        if (r != 0) { continue; }
 
         struct message * sms = malloc(sizeof(struct message));
         *sms = m;
@@ -84,7 +84,8 @@ void* process_threads(void *arg) {
 
     free(arg);
 
-    args.msg->tskres = task(args.msg->tskload);
+    if (check_time(args.argc, args.argv))
+        args.msg->tskres = task(args.msg->tskload);
 
     if (check_time(args.argc, args.argv)) {
         register_message(args.msg, "TSKEX");

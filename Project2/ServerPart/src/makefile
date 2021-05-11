@@ -7,4 +7,4 @@ c: client_class/common.h client_class/client.c
 	gcc -Wall -o c client_class/client.c -pthread
 
 clean:
-	rm -f s
+	rm -f s c

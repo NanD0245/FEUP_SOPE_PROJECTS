@@ -14,9 +14,7 @@ void update_message(struct message * sms) {
 }
 
 int recieve_message(int argc, char* argv[], struct message * sms) {
-    
-
-    int sl;
+    /*int sl;
     fd_set rfds;
     FD_ZERO(&rfds);
     FD_SET(public_fifo,&rfds);
@@ -36,17 +34,17 @@ int recieve_message(int argc, char* argv[], struct message * sms) {
         perror("ERROR - select");
         return 1;
     }
-    else if (sl > 0) {
-        int r;
-        if ((r = read(public_fifo, sms, sizeof(struct message))) < 0) {
-            perror("ERROR - read");
-            return 1;
-        } else if (r == 0) { return 1; }
-        else {
-            register_message(sms, "RECVD");
-            return 0;
-        }
+    else if (sl > 0) { */
+    int r;
+    if ((r = read(public_fifo, sms, sizeof(struct message))) < 0) {
+        //perror("ERROR - read");
+        return 1;
+    } else if (r == 0) { return 1; }
+    else {
+        register_message(sms, "RECVD");
+        return 0;
     }
+    //}
     return 1;
 }
 
@@ -78,12 +76,13 @@ int send_message(struct message *sms, char * path) {
 
     update_message(sms);
 
-    if ((private_fifo = open(path, O_WRONLY | O_NONBLOCK)) == -1) {
+    if ((private_fifo = open(path, O_WRONLY | O_NONBLOCK)) < 0) {
         register_message(sms, "FAILD");
     }
     else {
-
-        if (write(private_fifo, &message, sizeof(struct message)) == -1)
+        if (access(path, F_OK) != 0)
+            register_message(sms, "FAILD");
+        else if (write(private_fifo, &message, sizeof(struct message)) == -1)
             register_message(sms, "FAILD");
         else {
             if (sms->tskres == -1) {

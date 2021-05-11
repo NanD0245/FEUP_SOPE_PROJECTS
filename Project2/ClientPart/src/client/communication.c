@@ -18,8 +18,8 @@ struct message generate_message(int id){
 
 int send_message(int argc, char* argv[], struct message sms) {
     if (check_time(argv)) {
-        printf("%ld ; %d ; %d ; %ld ; %d ; %d ; IWANT\n", time(NULL), sms.rid, sms.pid, sms.tid, sms.tskload, sms.tskres);
-        write(public_fifo, &sms, sizeof(struct message));
+        if (write(public_fifo, &sms, sizeof(struct message)) > 0)
+            printf("%ld ; %d ; %d ; %ld ; %d ; %d ; IWANT\n", time(NULL), sms.rid, sms.pid, sms.tid, sms.tskload, sms.tskres);  
     }
     return 0;
 }

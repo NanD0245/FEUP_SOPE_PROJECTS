@@ -102,8 +102,10 @@ Cada linha terá a seguinte estrutura :
         - **GAVUP** - um thread de pedido do Cliente c1, ..., cn informa que não pode esperar mais pela resposta do Servidor, porque o prazo de funcionamento do Cliente venceu, e desiste
         - **FAILD**  - o  thread consumidor do Servidor  sc  informa que não consegue responder a pedido, porque a FIFO privada do thread do cliente fechou, e termina
 
+## Ligação das comunicações aos registos
 
-
+O   diagrama   seguinte   exemplifica   a   ligação   entre   as   mensagens   trocadas   entre   osprocessos/threads  e  os registos  efectuados  na  saída padrão   de cada   um.  Cada  setarepresenta uma mensagem emitida por um thread e recebida por outro; o tempo cresce decima para baixo. Neste exemplo, o Servidor termina a execução antes do *Cliente* terminar.Neste exemplo, o thread principal do Cliente c0 gerou três threads de pedidos (c1, c2 ec3). O primeiro deles envia um pedido ao Servidor pelo FIFO público fifoname e registaesse pedido (*IWANT*). O thread principal do Servidor s0 recebe esse pedido e acusa esseevento (*RECVD*), criando um thread Produtor s1 para tratar da execução da tarefa pedida,chamando  B; este Produtor, assim que recebe o resultado de  B, acusa a receção doresultado   (*TSKEX*)   e   coloca-o   no   armazém.   O  thread  Consumidor  sc  vai   lendo   osresultados das execuções e responde ao Cliente através do respectivo  thread  privado,informando   do envio (*TSKDN*). Quando o  threadc1  do *Cliente* recebe o resultado daexecução, acusa essa receção (*GOTRS*). Quando o pedido de c2 chega ao Servidor, já sedeu o timeout e o pedido já não será atendido, pelo que o thread Produtor s2 não executa atarefa em  B  e coloca um item disso indicativo no armazém (-1). Nesse caso o  threadConsumidor  sc  vai   responder   ao   Cliente   com   o   resultado   -1   e   informa   desse   envio(*2LATE*);   quando  c2  recebe   essa   mensagem   acusa   a   receção   do   encerramento   do Servidor (*CLOSD*). Enquanto o thread de pedido c3 espera pela resposta, dá-se o timeoutdo Cliente. Nessa altura o  thread  deixa de esperar pela resposta e acusa esse evento(*GAVUP*). Vai também fechar o seu FIFO privado, pelo que quando o Servidor tentareventualmente responder vai falhar e acusar essa ocorrência (*FAILD*).
+      
 
 ## Entrega do Trabalho
 

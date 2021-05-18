@@ -12,7 +12,7 @@ int process_tasks(int argc, char* argv[]) {
     initQueue((argc == 4) ? 10 : atoi(argv[4]));
 
     char name[2000];
-    snprintf(name, 2000, "%s", argv[argc - 1]);
+    snprintf(name, sizeof(name), "%s", argv[argc - 1]);
 
     if ((public_fifo = open(name, O_RDONLY | O_NONBLOCK)) < 0 ) {
         perror("ERROR - open");
@@ -113,7 +113,7 @@ void * process_sc(void* arg) {
         if (sms->tskres == -9999) { free(sms); break; }
 
         char path[2000];
-        snprintf(path, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
+        snprintf(path, sizeof(path), "/tmp/%d.%ld", sms->pid, sms->tid);
 
         send_message(sms, path);
 
@@ -126,7 +126,7 @@ void * process_sc(void* arg) {
         pthread_mutex_unlock(&mutex);
 
         char path[2000];
-        snprintf(path, 2000, "/tmp/%d.%ld", sms->pid, sms->tid);
+        snprintf(path, sizeof(path), "/tmp/%d.%ld", sms->pid, sms->tid);
 
         send_message(sms, path);
         free_message(sms, path);

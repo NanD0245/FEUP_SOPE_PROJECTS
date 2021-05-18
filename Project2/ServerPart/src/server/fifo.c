@@ -2,7 +2,7 @@
 
 int create_publicFIFO(int argc, char* argv[]){
     char name[2000];
-    snprintf(name, 2000, "%s", argv[argc - 1]);
+    snprintf(name, sizeof(name), "%s", argv[argc - 1]);
     if (mkfifo(name , 0666) < 0) {
         perror("ERROR");
         return -1;
@@ -13,7 +13,7 @@ int create_publicFIFO(int argc, char* argv[]){
 
 int unlink_publicFIFO(int argc, char* argv[]) {
     char name[2000];
-    snprintf(name, 2000, "%s", argv[argc - 1]);
+    snprintf(name, sizeof(name), "%s", argv[argc - 1]);
     if (unlink(name)){
         perror("ERROR");
         return -1;

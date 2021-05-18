@@ -39,13 +39,17 @@ int recieve_message(int argc, char* argv[], struct message * sms) {
     if ((r = read(public_fifo, sms, sizeof(struct message))) < 0) {
         //perror("ERROR - read");
         return 1;
-    } else if (r == 0) { return 1; }
-    else {
+    } 
+    else if (r == 0) 
+    { 
+        return 1;
+    }
+    else 
+    {
         register_message(sms, "RECVD");
         return 0;
     }
     //}
-    return 1;
 }
 
 int insert_message(struct message * sms) {
@@ -79,17 +83,20 @@ int send_message(struct message *sms, char * path) {
     if ((private_fifo = open(path, O_WRONLY | O_NONBLOCK)) < 0) {
         register_message(sms, "FAILD");
     }
-    else {
+    else 
+    {
         if (access(path, F_OK) != 0)
             register_message(sms, "FAILD");
         else if (write(private_fifo, &message, sizeof(struct message)) == -1)
             register_message(sms, "FAILD");
-        else {
+        else 
+        {
             if (sms->tskres == -1) {
                 register_message(sms, "2LATE");
                 close(private_fifo);
             }
-            else {
+            else 
+            {
                 register_message(sms, "TSKDN");
                 close(private_fifo);
             }

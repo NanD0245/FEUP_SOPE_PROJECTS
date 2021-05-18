@@ -41,16 +41,21 @@ Requisitos comuns ao Cliente e ao Servidor
 - as tarefas a executar no Servidor (pelo código na Biblioteca) são identificadas por um inteiro único universal e exigem uma carga de processamento que é classificada por um número entre 1 e 9; o resultado da execução de cada tarefa é um valor inteiro único.
 ![image](https://user-images.githubusercontent.com/55672106/116574042-40ade180-a905-11eb-9267-4f9fff88a215.png)
 
-## Requisitos para o Cliente C
-O Cliente C é invocado com o comando: c "-t nsecs" "fifoname"
+## Requisitos para o Server S
+O Servidor S é invocado com o comando:
+*s <-t nsecs> [-l bufsz] <fifoname>*
+
 - nsecs - nº (aproximado) de segundos que o programa deve funcionar
-- fifoname - nome (absoluto ou relativo) do canal público de comunicação com nome(FIFO) por onde o Cliente envia pedidos ao Servidor
+- bufsz - tamanho do armazém (buffer) a ser utilizado para guardar os resultados dospedidos
+- fifoname - nome (absoluto ou relativo) do canal público de comunicação com nome(FIFO) por onde serão recebidos pedidos de execução de tarefas
+
 O seu funcionamento, de forma sumarizada, é o seguinte:
-- inicialmente, recolhe os argumentos de linha de comando e executa as operações fundamentais para o funcionamento do programa;
-- o  thread  principal  c0  lança  continuamente  threads  de pedido  c1, ...,  cn  (com intervalos   (pseudo-)aleatórios   de   alguns   milisegundos,   por   forma   de   exacerbarcondições de competição), cada um ficando associado a um pedido ao Servidor;
-- cada  thread  de pedido  c1, ...,  cn gera os parâmetros do pedido pelo qual é responsável (especificamente, o seu número de identificação universal único e a carga   da   tarefa   pedida,   valor   aleatório   inteiro   entre   1   e   9),   trata   de   toda   a comunicação com o servidor, incluindo a criação e posterior eliminação de um FIFOprivado por onde receberá a resposta do Servidor, pela qual terá de esperar embloqueamento;  chegada a resposta, termina (não sem antes efectuar eventuais operações de registo ou disponibilização do resultado ao utilizador);
-- caso o Servidor feche, o FIFO, o Cliente deverá detectar tal situação e terminar a geração de novos pedidos; os threads com pedidos já colocados deverão aguardar resposta, que será: o resultado normal do pedido de tarefa (que indica que o pedidoainda foi atendido a tempo pelo Servidor) ou uma indicação de encerramento (no caso de o pedido já não ser atendido);
-- após o prazo de funcionamento especificado pelo utilizador, o Cliente deve terminara execução fazendo com que os threads em espera de resposta desistam mas não sem antes garantir que todos os recursos tomados ao sistema são libertados.
+- inicialmente, recolhe os argumentos de linha de comando e executa as operaçõesfundamentais para o funcionamento do programa;
+- os   pedido   do  Cliente   são  recolhidos   pelo  thread  principal  s0  que   cria  threadsProdutores  s1,   ...,  sn e   lhes   passa   os   pedidos;   cada   Produtor   invoca   acorrespondente   tarefa   em  B  e   coloca   o   resultado   obtido   no   armazém;   depois,termina;
+- o   acesso   ao   armazém   deve   ser   gerido   usando   as   primitivas   de   sincronizaçãoestudadas (e.g., semáforos), devendo os threads  Consumidor e Produtores ficarbloqueados quando o armazém estiver, respectivamente, vazio ou cheio;
+- o (único) thread Consumidordeve continuamente tentar retirar valores do armazémpela ordem de inserção e enviar cada um  ao correspondente thread Cliente que fezo pedido,através do respectivo FIFO privado;
+- mesmo não havendo pedidos do Cliente (estando o canal público vazio), o Servidordeve continuar a executar, ficando à espera da chegada de algum pedido, até aofinal do prazo de execução especificado (em argumento da linha de comando);
+- no final, deve garantir-se que todos os recursos tomados ao sistema são libertados.
 
 ## Comunicação entre C e S
 Para ambos os programas **C** e **S**:
@@ -97,9 +102,8 @@ Cada linha terá a seguinte estrutura :
         - **GAVUP** - um thread de pedido do Cliente c1, ..., cn informa que não pode esperar mais pela resposta do Servidor, porque o prazo de funcionamento do Cliente venceu, e desiste
         - **FAILD**  - o  thread consumidor do Servidor  sc  informa que não consegue responder a pedido, porque a FIFO privada do thread do cliente fechou, e termina
 
-## Ligação das comunicações aos registos
 
-O   diagrama   seguinte   exemplifica   a   ligação   entre   as   mensagens   trocadas   entre   osprocessos/threads  e  os registos  efectuados  na  saída padrão   de cada   um.  Cada  setarepresenta uma mensagem emitida por um thread e recebida por outro; o tempo cresce decima para baixo. Neste exemplo, o Servidor termina a execução antes do *Cliente* terminar.Neste exemplo, o thread principal do Cliente c0 gerou três threads de pedidos (c1, c2 ec3). O primeiro deles envia um pedido ao Servidor pelo FIFO público fifoname e registaesse pedido (*IWANT*). O thread principal do Servidor s0 recebe esse pedido e acusa esseevento (*RECVD*), criando um thread Produtor s1 para tratar da execução da tarefa pedida,chamando  B; este Produtor, assim que recebe o resultado de  B, acusa a receção doresultado   (*TSKEX*)   e   coloca-o   no   armazém.   O  thread  Consumidor  sc  vai   lendo   osresultados das execuções e responde ao Cliente através do respectivo  thread  privado,informando   do envio (*TSKDN*). Quando o  threadc1  do *Cliente* recebe o resultado daexecução, acusa essa receção (*GOTRS*). Quando o pedido de c2 chega ao Servidor, já sedeu o timeout e o pedido já não será atendido, pelo que o thread Produtor s2 não executa atarefa em  B  e coloca um item disso indicativo no armazém (-1). Nesse caso o  threadConsumidor  sc  vai   responder   ao   Cliente   com   o   resultado   -1   e   informa   desse   envio(*2LATE*);   quando  c2  recebe   essa   mensagem   acusa   a   receção   do   encerramento   do Servidor (*CLOSD*). Enquanto o thread de pedido c3 espera pela resposta, dá-se o timeoutdo Cliente. Nessa altura o  thread  deixa de esperar pela resposta e acusa esse evento(*GAVUP*). Vai também fechar o seu FIFO privado, pelo que quando o Servidor tentareventualmente responder vai falhar e acusar essa ocorrência (*FAILD*).
+
 
 ## Entrega do Trabalho
 

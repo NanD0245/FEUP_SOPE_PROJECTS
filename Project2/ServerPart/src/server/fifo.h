@@ -16,4 +16,11 @@
  */
 int create_publicFIFO(int argc, char* argv[]);
 
+/**
+ * @brief Unlinks the publicFifo
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int unlink_publicFIFO(int argc, char* argv[]);

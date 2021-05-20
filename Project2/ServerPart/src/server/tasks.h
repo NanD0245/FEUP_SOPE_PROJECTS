@@ -19,11 +19,36 @@ struct argCV {
     struct message * msg;
 };
 
+/**
+ * @brief Creates threads and its where the main process is done. 
+ * 
+ * @param argc 
+ * @param argv 
+ * @return int 
+ */
 int process_tasks(int argc, char* argv[]);
 
+/**
+ * @brief Start routine that process all the threads.
+ * 
+ * @param arg 
+ * @return void* 
+ */
 void* process_threads(void *arg);
 
+/**
+ * @brief Start routine for consumer thread.
+ * 
+ * @param arg 
+ * @return void* 
+ */
 void* process_sc(void *arg);
 
+/**
+ * @brief Free the allocated memory for the message in the parameter
+ * 
+ * @param sms 
+ * @param path 
+ */
 void free_message(struct message * sms, char * path);
 

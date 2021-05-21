@@ -12,6 +12,9 @@
 
 /**
  * @brief Creates the publicFIFO.
+ *
+ * @param argc 
+ * @param argv 
  * @return Whether it was successful or not. 
  */
 int create_publicFIFO(int argc, char* argv[]);
@@ -21,6 +24,6 @@ int create_publicFIFO(int argc, char* argv[]);
  * 
  * @param argc 
  * @param argv 
- * @return int 
+ * @return Whether it was successful or not.
  */
 int unlink_publicFIFO(int argc, char* argv[]);

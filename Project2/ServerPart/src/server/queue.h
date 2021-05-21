@@ -8,7 +8,7 @@
 extern struct message m;
 
 /**
- * @brief 
+ * @brief Initialize the queue where the messages are stored
  * 
  * @param max 
  */
@@ -31,7 +31,7 @@ bool isEmpty();
 
 
 /**
- * @brief Returns wheter the queue is full or not
+ * @brief Returns true if the queue is full or false otherwise
  * 
  * @return true 
  * @return false 
@@ -39,14 +39,14 @@ bool isEmpty();
 bool isFull();
 
 /**
- * @brief Used to get the size of the queue
+ * @brief Return the size of the queue
  * 
  * @return int 
  */
 int size();
 
 /**
- * @brief Inserts another message into the queue( if the queue is not full) and updates variables
+ * @brief Inserts a message into the queue if the queue is not full
  * 
  * @param data 
  */
@@ -59,20 +59,21 @@ void insert(struct message* data);
  */
 
 struct message* pop();
+
 /**
- * @brief Deallocates the memory previously allocated for the queue
+ * @brief Free the memory previously allocated for the queue
  */
 void freeQueue();
 
 /**
- * @brief Get the Item Count
+ * @brief Return the number of elements in the queue
  * 
  * @return int 
  */
 int getItemCount();
 
 /**
- * @brief Get the Number of Messages
+ * @brief Get the total number of Messages
  * 
  * @return int 
  */

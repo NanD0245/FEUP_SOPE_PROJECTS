@@ -14,7 +14,7 @@ void update_message(struct message * sms) {
 }
 
 int recieve_message(int argc, char* argv[], struct message * sms) {
-    /*int sl;
+    int sl;
     fd_set rfds;
     FD_ZERO(&rfds);
     FD_SET(public_fifo,&rfds);
@@ -26,30 +26,26 @@ int recieve_message(int argc, char* argv[], struct message * sms) {
         tmv.tv_usec = 0;
     }
     else {
-        tmv.tv_usec = get_remaining_time_micro(argv);
-        tmv.tv_sec = 0;
+        tmv.tv_usec = 0;
+        tmv.tv_sec = 1;
     }
 
     if ((sl = select(public_fifo + 1, &rfds, NULL, NULL, &tmv)) == -1) {
         perror("ERROR - select");
         return 1;
     }
-    else if (sl > 0) { */
-    int r;
-    if ((r = read(public_fifo, sms, sizeof(struct message))) < 0) {
-        //perror("ERROR - read");
-        return 1;
-    } 
-    else if (r == 0) 
-    { 
-        return 1;
+    else if (sl > 0) { 
+        int r;
+        if ((r = read(public_fifo, sms, sizeof(struct message))) <= 0) {
+            return 1;
+        } 
+        else 
+        {
+            register_message(sms, "RECVD");
+            return 0;
+        }
     }
-    else 
-    {
-        register_message(sms, "RECVD");
-        return 0;
-    }
-    //}
+    return 1;
 }
 
 int insert_message(struct message * sms) {

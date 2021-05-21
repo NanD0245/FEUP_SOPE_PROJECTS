@@ -54,7 +54,7 @@ int process_tasks(int argc, char* argv[]) {
         n_messages++;
     }
 
-    unlink_publicFIFO(argc,argv);
+    close(public_fifo);
 
     while (getNumMessages() != n_messages) ;
 
@@ -69,7 +69,7 @@ int process_tasks(int argc, char* argv[]) {
     sem_destroy(&empty);
     sem_destroy(&full);
 
-    close(public_fifo);
+    unlink_publicFIFO(argc,argv);
     
     freeQueue();
 

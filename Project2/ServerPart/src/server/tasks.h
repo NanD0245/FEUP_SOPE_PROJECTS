@@ -29,7 +29,7 @@ struct argCV {
 int process_tasks(int argc, char* argv[]);
 
 /**
- * @brief Start routine that process all the threads.
+ * @brief Start routine that process all the producers threads.
  * 
  * @param arg 
  * @return void* 
@@ -37,7 +37,7 @@ int process_tasks(int argc, char* argv[]);
 void* process_threads(void *arg);
 
 /**
- * @brief Start routine for consumer thread.
+ * @brief Start routine that process the consumer thread.
  * 
  * @param arg 
  * @return void* 
@@ -48,7 +48,6 @@ void* process_sc(void *arg);
  * @brief Free the allocated memory for the message in the parameter
  * 
  * @param sms 
- * @param path 
  */
 void free_message(struct message * sms, char * path);
 

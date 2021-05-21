@@ -35,7 +35,7 @@ struct message {
 void update_message(struct message * sms);
 
 /**
- * @brief Function used to process a received message
+ * @brief Function used to receive a message from client
  * 
  * @param argc 
  * @param argv 
@@ -53,16 +53,16 @@ int recieve_message(int argc,char* argv[], struct message * sms);
 int insert_message(struct message * sms);
 
 /**
- * @brief Writes the message to the private fifo and calls the operation register to save the operation info 
+ * @brief Send the message to client and calls the operation register to save the operation info 
  * 
  * @param sms 
  * @param path 
- * @return int 
+ * @return Whether it was successful or not
  */
 int send_message(struct message * sms, char * path);
 
 /**
- * @brief Allows the finish of the process by changing variable in struct message
+ * @brief Notify the finish of the process by sending a message with a specific negative tskres in struct message
  * 
  * @return Whether it was successful or not
  */

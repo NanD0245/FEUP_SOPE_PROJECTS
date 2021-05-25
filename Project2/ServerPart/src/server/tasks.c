@@ -84,12 +84,11 @@ void* process_threads(void *arg) {
 
     free(arg);
 
-    if (check_time(args.argc, args.argv))
-        args.msg->tskres = task(args.msg->tskload);
+    args.msg->tskres = task(args.msg->tskload);
+    register_message(args.msg, "TSKEX");
 
-    if (check_time(args.argc, args.argv)) {
-        register_message(args.msg, "TSKEX");
-    } else {
+
+    if (!check_time(args.argc, args.argv)) {
         args.msg->tskres = -1;
     }
 
